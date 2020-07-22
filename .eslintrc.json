@@ -1,8 +1,12 @@
 {
+    "parserOptions": {
+        "ecmaVersion": 2017
+        },
     "env": {
         "browser": true,
         "commonjs": true,
-        "node": true
+        "node": true,
+        "es6": true
     },
     "rules": {
         "no-duplicate-case":"error",
@@ -11,8 +15,8 @@
         "no-func-assign": "error",
         "no-irregular-whitespace":"error",
         "no-unreachable": "error",
-        "curly": "error",
-        "dot-notation": "error",
+        "curly": "warn",
+        "dot-notation": "warn",
         "eqeqeq": "error",
         "no-empty-function": "error",
         "no-multi-spaces": "error",
@@ -20,10 +24,10 @@
         "no-trailing-spaces": "error",
         "default-case": "error",
         "no-fallthrough": "error",
-        "no-unused-vars": "error",
+        "no-unused-vars": "warn",
         "no-use-before-define": "error",
         "no-redeclare": "error",
-        "camelcase": "error",
+        "camelcase": "warn",
         "brace-style": "error",
         "indent": [
             "error",
