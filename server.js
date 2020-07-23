@@ -2,6 +2,7 @@ const express = require("express");
 const db = require("./models");
 const session = require("express-session");
 const passport = require("passport");
+const path = require("path");
 
 const app = express();
 
@@ -14,7 +15,7 @@ const PORT = process.env.PORT || 8080;
 // use Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "/public")));
 
 // set up express-session
 app.use(

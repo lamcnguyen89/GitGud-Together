@@ -12,8 +12,8 @@ const handleSubmit = async (e) => {
   divAlertReg.value = "";
   const userObj = {
     email: emailInputReg.value,
-    steam: steamUserInputReg.value,
-    discord: discordUserInputReg,
+    steam_usr: steamUserInputReg.value,
+    usr_discord: discordUserInputReg.value,
     password: passwordInputReg.value,
     passwordTwo: passwordTwoInputReg.value,
   };
