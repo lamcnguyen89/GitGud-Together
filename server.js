@@ -17,23 +17,30 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // set up express-session
-app.use(session({
-    secret: 'keyboard cat',
+app.use(
+  session({
+    secret: "keyboard cat",
     resave: false,
-    saveUninitialized: true
-}));
+    saveUninitialized: true,
+  })
+);
+
+// Set Handlebars.
+const exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 // use passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
 
 // use routes
-app.use(routes)
+app.use(routes);
 
 // connect to database and start server
 db.sequelize.sync().then(() => {
-    app.listen(PORT, () => {
-        console.log(`app listening on: http://localhost:${PORT}`);
-
-    })
-})
+  app.listen(PORT, () => {
+    console.log(`app listening on: http://localhost:${PORT}`);
+  });
+});
