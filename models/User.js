@@ -13,24 +13,6 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       max: 32,
       min: 3
-    },
-    usr_steam: {
-      type: DataTypes.STRING,
-      allowNull: true,
-      validate: {
-        isAlphanumeric: true,
-        max: 32,
-        min: 3
-      }
-    },
-    usr_discord: {
-      type: DataTypes.STRING,
-      allowNull: true,
-      validate: {
-        isAlphanumeric: true,
-        max: 32,
-        min: 3
-      }
     }
   });
 
