@@ -18,7 +18,7 @@
         "curly": "warn",
         "dot-notation": "warn",
         "eqeqeq": "error",
-        "no-empty-function": "error",
+        "no-empty-function": "warn",
         "no-multi-spaces": "error",
         "no-mixed-spaces-and-tabs": "error",
         "no-trailing-spaces": "error",
@@ -35,6 +35,7 @@
         ],
         "quotes": [
             "error",
+            "backtick",
             "double"
         ],
         "semi": [

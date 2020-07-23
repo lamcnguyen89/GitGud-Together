@@ -9,7 +9,7 @@
     "lint": "eslint **/*.js --quiet"
   },
   "keywords": [],
-  "author": "",
+  "author": "Covid Coders",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
