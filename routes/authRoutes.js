@@ -20,11 +20,11 @@ router.post("/register", async (req, res) => {
     // for both passwords to be the same
     if (password !== passwordTwo) return res.status(400).json({ message: "Passwords don't match" });
     // check database for a user with the email entered in the form
-    const user = await db.User.findOne({ where: { email: email } })
+    const user = await db.User.findOne({ where: { email: email } });
 
     if (user) {
     // if user already in database, send error
-      res.status(400).json({ message: "User already Registered. Please, LogIn" })
+      res.status(400).json({ message: "User already Registered. Please, LogIn" });
     } else {
     // Using bcrypt to hash the password
       bcrypt.genSalt(10, (err, salt) => {
@@ -47,7 +47,7 @@ router.post("/register", async (req, res) => {
       });
     }
   } catch (err) {
-    if (err) res.status(500).json({ message: "Internal Error" })
+    if (err) res.status(500).json({ message: "Internal Error" });
   }
 
 });
@@ -61,7 +61,7 @@ router.post("/login", (req, res, next) => {
   if (email === "" || password === "") return res.status(400).json({ message: "Please fill all fields" });
   // passport Authentication using the "Local strategy" inside the "config" folder config/passport.js."
   // passport check the email and password and returns a function passing three arguments (err, info, user)
-  passport.authenticate('local', (err, user, info) => {
+  passport.authenticate("local", (err, user, info) => {
     if (err) next(err);
     // if can't find email, or if password is incorrect, send error message (info)
     if (!user) res.status(404).json(info);
@@ -79,11 +79,11 @@ router.post("/login", (req, res, next) => {
 router.get("/user", auth, async (req, res) => {
   try {
     const userdId = req.session.passport.user;
-    const user = await db.User.findOne({ where: { id: userdId } })
+    const user = await db.User.findOne({ where: { id: userdId } });
     const { id, email } = user;
     res.json({ id, email });
   } catch (err) {
-    if (err) console.log(err)
+    if (err) console.log(err);
   }
 });
 // Route: /auth/logout
