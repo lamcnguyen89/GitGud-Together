@@ -12,7 +12,9 @@ const handleSubmit = async (e) => {
   divAlertReg.value = "";
   const userObj = {
     email: emailInputReg.value,
+    // eslint-disable-next-line camelcase
     steam_usr: steamUserInputReg.value,
+    // eslint-disable-next-line camelcase
     usr_discord: discordUserInputReg.value,
     password: passwordInputReg.value,
     passwordTwo: passwordTwoInputReg.value,
