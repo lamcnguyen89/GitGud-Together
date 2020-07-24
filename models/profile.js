@@ -1,22 +1,33 @@
 module.exports = function (sequelize, DataTypes) {
-    var User = sequelize.define("Profile", {
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
-        validate: {
-          isEmail: true,
+    var Profile = sequelize.define("Profile", {
+        username: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            unique: true
         },
-      },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        max: 32,
-        min: 3
-      },
-    
+        aboutme:{
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        
+        topgamesPlayed: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+
+        genres: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        achievements:{
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        location:{
+            type: DataTypes.STRING,
+            allowNull: false
+        }
     });
-  
-    return User;
-  };
-  
+
+    return Profile;
+};
