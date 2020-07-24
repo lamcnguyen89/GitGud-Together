@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const profileModel = require("../models")
+const db = require("../models");
 
 // use this file to code your API routes
 
