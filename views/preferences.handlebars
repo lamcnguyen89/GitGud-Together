@@ -1,7 +1,7 @@
  <div class="container-fluid">
-        <div class="row bg-dark">
+        <div class="row">
             <div class="col-md-8 p-0">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-2">
+                <nav class="navbar navbar-expand-lg navbar-dark pt-2">
                     <a class="navbar-brand ml-3" href="/">Home</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
                                         <label for="first_name">
                                             <h4>Steam Username</h4>
                                         </label>
-                                        <input type="text" class="form-control" name="first_name" id="first_name"
+                                        <input type="text" class="form-control" name="first_name" id="steamusername"
                                             placeholder="Steam Username" title="enter your first name if any.">
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@
                                         <label for="phone">
                                             <h4>What is your location?</h4>
                                         </label>
-                                        <input type="text" class="form-control" name="phone" id="phone"
+                                        <input type="text" class="form-control" name="phone" id="location"
                                             placeholder="Enter Location Here" title="enter your phone number if any.">
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@
                                         <label for="last_name">
                                             <h4>What are you playing now?</h4>
                                         </label>
-                                        <input type="text" class="form-control" name="last_name" id="last_name"
+                                        <input type="text" class="form-control" name="last_name" id="currently"
                                             placeholder="Game you are currently playing"
                                             title="enter your last name if any.">
                                     </div>
@@ -90,7 +90,7 @@
                                         <label for="phone">
                                             <h4>What is your top favorite genre?</h4>
                                         </label>
-                                        <input type="text" class="form-control" name="phone" id="phone"
+                                        <input type="text" class="form-control" name="phone" id="favGenre"
                                             placeholder="Top Favorite Genre Here" title="enter your phone number if any.">
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@
                                         <label for="phone">
                                             <h4>About Me</h4>
                                         </label>
-                                        <input type="text" class="form-control" name="phone" id="phone"
+                                        <input type="text" class="form-control" name="phone" id="aboutme"
                                             placeholder="Enter Information About Yourself" title="enter your phone number if any.">
                                     </div>
                                 </div>
@@ -112,14 +112,14 @@
                                         <label for="phone">
                                             <h4>What are your achievements?</h4>
                                         </label>
-                                        <input type="text" class="form-control" name="phone" id="phone"
+                                        <input type="text" class="form-control" name="phone" id="achievements"
                                             placeholder="Enter Information About Yourself" title="enter your phone number if any.">
                                     </div>
                                 </div>
                                 
                                 <div class="col-xs-12">
                                     <br>
-                                    <button class="btn btn-lg btn-success" type="submit"><i
+                                    <button id="savePref" class="btn btn-lg btn-success" type="submit"><i
                                             class="glyphicon glyphicon-ok-sign"></i> Save</button>
                                     <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i>
                                         Reset</button>
