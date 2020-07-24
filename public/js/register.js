@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
     },
     body: JSON.stringify(userObj)
   });
-  const data = await response.json();
+  const data = await response.json()
   // If there is an error, display error to screen.
   if (data.message) {
     const message = data.message;
