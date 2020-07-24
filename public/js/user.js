@@ -13,9 +13,22 @@ fetch("/auth/user")
 
 $(".submitBtn").on("click", function (event) {
   event.preventDefault();
+  const profileObj = {
+    username: $("#steamUsername").val().trim(),
+    aboutme: $("#about").val().trim(),
+    topgamesPlayed: $("#currently").val().trim(),
+    genres: $("#genre").val().trim(),
+    achievements: $("#achievements").val().trim(),
+    location: $("#location").val().trim(),
+    
+  
+  
+  
+  
+  }
   console.log($("#steamUsername").val());
-  $.post("/api/profile", {username : $("#steamUsername").val()})
-    .then(response => response.json())
+  $.post("/api/profile", profileObj)
+    .then(response => console.log(response))
 
     .catch(err => console.log(err));
 });
