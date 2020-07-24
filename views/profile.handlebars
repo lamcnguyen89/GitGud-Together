@@ -1,35 +1,35 @@
- <div class="container-fluid">
-        <div class="row bg-dark">
-            <div class="col-md-8 p-0">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-2">
-                    <a class="navbar-brand ml-3" href="/">Home</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-primary" href="/">Dashboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/user/page2">Preferences</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/auth/logout">Logout</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="col-md-4 text-right pt-2">
-                <a class="text-white pr-0 mr-3" href="/user/profile"><span class="userName"></span>
-                    <i class="fas fa-user-circle fa-2x text-white mt-1 ml-2 mb-2"></i></a>
-            </div>
+<div class="container-fluid">
+    <div class="row bg-dark">
+        <div class="col-md-8 p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-2">
+                <a class="navbar-brand ml-3" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="/">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/page2">Preferences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/auth/logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-4 text-right pt-2">
+            <a class="text-white pr-0 mr-3" href="/user/profile"><span class="userName"></span>
+                <i class="fas fa-user-circle fa-2x text-white mt-1 ml-2 mb-2"></i></a>
         </div>
     </div>
+</div>
 
-    <hr>
+<hr>
 
 <div class="container bootstrap snippet">
 
@@ -41,20 +41,20 @@
 
     <div class="row">
 
-            <div class="col-sm-3">
-                <!--left col-->
+        <div class="col-sm-3">
+            <!--left col-->
 
 
-                <div class="text-center">
-                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail"
-                        alt="avatar">
-                    <h6>Upload a different photo...</h6>
-                    <input type="file" class="text-center center-block file-upload">
-                </div>
-                </hr><br>
+            <div class="text-center">
+                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail"
+                    alt="avatar">
+                <h6>Upload a different photo...</h6>
+                <input type="file" class="text-center center-block file-upload">
+            </div>
+            </hr><br>
 
 
-                {{!-- <div class="panel panel-default">
+            {{!-- <div class="panel panel-default">
                     <div class="panel-heading">Website <i class="fa fa-link fa-1x"></i></div>
                     <div class="panel-body"><a href="http://bootnipets.com">bootnipets.com</a></div>
                 </div>
@@ -76,12 +76,10 @@
                             class="fa fa-google-plus fa-2x"></i>
                     </div>
                 </div> --}}
+        </div>
+        <!--/col-3-->
 
-            </div>
-            <!--/col-3-->
-
-
-            <div class="col-sm-9">
+        <div class="col-sm-9">
 
                 <div class="tab-content">
                     <div class="tab-pane active" id="home">
@@ -91,46 +89,41 @@
                                  <h3>Steam Username:<h3>
                                      <span id="steamUsername"></span>
                              </div> 
-                        </div>
-                            
-                        <div class= "row m-4">
-                            <div class="col-sm">
-                                <h1>Location appended here</h1>
-                            </div> 
-                        </div>
-                            
-                        <div class= "row m-4">
-                            <div class="col-sm">
-                                <h1>Currently Playing appended here</h1>
-                            </div>
-                        </div>
-                            
-                        <div class= "row m-4">
-                            <div class="col-sm">
-                                <h1>Top 5 Games Appended Here</h1>
-                            </div>
-                        </div>
 
-                        <hr>
-
+                        </div>
                     </div>
-                    <!--/tab-pane-->
-                    
+
+                    <div class="row m-4">
+                        <div class="col-sm">
+                            <h1>Location appended here</h1>
+                        </div>
+                    </div>
+
+                    <div class="row m-4">
+                        <div class="col-sm">
+                            <h1>Currently Playing appended here</h1>
+                        </div>
+                    </div>
+
+                    <div class="row m-4">
+                        <div class="col-sm">
+                            <h1>Top 5 Games Appended Here</h1>
+                        </div>
+                    </div>
+
+                    <hr>
+
                 </div>
-                <!--/tab-content-->
+                <!--/tab-pane-->
 
             </div>
-            <!--/col-9-->
+            <!--/tab-content-->
+        </div>
+        <!--/col-9-->
     </div>
     <!--/row-->
 </div>
-    
 
-
-	
-
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/user.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/user.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
