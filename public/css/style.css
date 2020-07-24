@@ -1,0 +1,16 @@
+* {
+    background-color: #121212;
+}
+body {
+    background-color: #121212;
+}
+.header {
+  background: url(../images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+.nav .navbar .navbar-nav {
+    background-color: #121212;
+} 

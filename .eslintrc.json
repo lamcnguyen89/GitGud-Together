@@ -28,7 +28,7 @@
         "no-use-before-define": "error",
         "no-redeclare": "error",
         "camelcase": "warn",
-        "brace-style": "error",
+        "brace-style": "warn",
         "indent": [
             "error",
             2

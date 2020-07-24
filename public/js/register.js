@@ -16,12 +16,12 @@ const handleSubmit = async (e) => {
     password: passwordInputReg.value,
     passwordTwo: passwordTwoInputReg.value
   };
-    // Create Object to be used on the log-in request after successful registration with information from the form
+  // Create Object to be used on the log-in request after successful registration with information from the form
   const loginObj = {
     email: emailInputReg.value,
     password: passwordInputReg.value
   };
-    // Request to server to Register passing the User information (userObj)
+  // Request to server to Register passing the User information (userObj)
   const response = await fetch("/auth/register", {
     method: "POST",
     headers: {
