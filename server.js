@@ -22,9 +22,9 @@ app.set("view engine", "handlebars");
 
 // set up express-session
 app.use(session({
-    secret: 'keyboard cat',
-    resave: false,
-    saveUninitialized: true
+  secret: "keyboard cat",
+  resave: false,
+  saveUninitialized: true
 }));
 
 // use passport middleware
@@ -36,8 +36,8 @@ app.use(routes)
 
 // connect to database and start server
 db.sequelize.sync().then(() => {
-    app.listen(PORT, () => {
-        console.log(`app listening on: http://localhost:${PORT}`);
+  app.listen(PORT, () => {
+    console.log(`app listening on: http://localhost:${PORT}`);
 
-    })
-})
+  });
+});
