@@ -10,7 +10,7 @@ module.exports = function (app) {
     //     //your code here
     // })
 
-    app.post("/api/profile", function (req, res) {
+    app.post("/user/profile", function (req, res) {
         db.Profile.create({
             username: req.body.steamusername,
             aboutme: req.body.aboutme,
