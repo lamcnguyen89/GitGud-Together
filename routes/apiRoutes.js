@@ -3,31 +3,31 @@ const db = require("../models");
 
 // use this file to code your API routes
 
-// All routes start with: /api
-module.exports = function (app) {
+router.post("/profile", function (req, res) {
+  console.log(req.body);
+  db.Profile.create({
 
-    // Route: /api/example
-    // i.e: router.get("/example", (req, res) => {
-    //     //your code here
-    // })
-//Creating user profile object.
-    app.post("/user/profile", function (req, res) {
-        db.Profile.create({
-            username: req.body.steamusername,
-            aboutme: req.body.aboutme,
-            topgamesPlayed: req.body.currently,
-            genres: req.body.favGenre,
-            achievements: req.body.achievements,
-            location: req.body.location
-        })
-            .then(function () {
-                res.redirect(307, "/api/login");
-            })
-            .catch(function (err) {
-                res.status(401).json(err);
-            });
+    username: req.body.username,
+
+  })
+    .then(function () {
+      res.redirect(307, "/api/login");
+    })
+    .catch(function (err) {
+      res.status(401).json(err);
     });
+});
 
-    module.exports = router;
+// router.get("/profile", function (req, res) {
+//   console.log(req.body);
+//   Profile.all(function (data) {
+//     var profileObj = {
+//       steamUsername: data
+//     };
+//     console.log(profileObj);
+//     res.render("profile", profileObj);
+//   });
+// });
 
-}
+module.exports = router;
+
