@@ -13,7 +13,6 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       max: 32,
       min: 3
-<<<<<<< HEAD
     },
     steam: {
       type: DataTypes.STRING
@@ -21,8 +20,6 @@ module.exports = function (sequelize, DataTypes) {
     discord: {
       type: DataTypes.STRING
 
-=======
->>>>>>> master
     }
   });
 
