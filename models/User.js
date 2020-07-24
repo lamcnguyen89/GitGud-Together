@@ -12,12 +12,9 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       max: 32,
-      min: 3
+      min: 3,
     },
-  
   });
 
   return User;
 };
-
-
