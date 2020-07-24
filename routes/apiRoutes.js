@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const profileModel = require("../models")
 
 // use this file to code your API routes
 
@@ -9,7 +10,7 @@ module.exports = function (app) {
     // i.e: router.get("/example", (req, res) => {
     //     //your code here
     // })
-
+//Creating user profile object.
     app.post("/user/profile", function (req, res) {
         db.Profile.create({
             username: req.body.steamusername,
