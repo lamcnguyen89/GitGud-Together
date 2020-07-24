@@ -13,6 +13,16 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       max: 32,
       min: 3
+<<<<<<< HEAD
+    },
+    steam: {
+      type: DataTypes.STRING
+    },
+    discord: {
+      type: DataTypes.STRING
+
+=======
+>>>>>>> master
     }
   });
 
