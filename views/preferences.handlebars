@@ -1,7 +1,7 @@
  <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 p-0">
-                <nav class="navbar navbar-expand-lg navbar-dark pt-2">
+                <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand ml-3" href="/">Home</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,15 +48,15 @@
                     <div class="tab-pane active" id="home">
                         <hr>
 
-                        <form class="form" action="##" method="post" id="registrationForm">
+                        <form class="form" id="registrationForm">
                             
                                 <div class="form-group">
 
                                     <div class="col-xs-6">
-                                        <label for="first_name">
+                                        <label for="steamUsername">
                                             <h4>Steam Username</h4>
                                         </label>
-                                        <input type="text" class="form-control" name="first_name" id="steamusername"
+                                        <input type="text" class="form-control" name="first_name" id="steamUsername"
                                             placeholder="Steam Username" title="enter your first name if any.">
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@
                                         <label for="phone">
                                             <h4>What is your top favorite genre?</h4>
                                         </label>
-                                        <input type="text" class="form-control" name="phone" id="favGenre"
+                                        <input type="text" class="form-control" name="phone" id="genre"
                                             placeholder="Top Favorite Genre Here" title="enter your phone number if any.">
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@
                                         <label for="phone">
                                             <h4>About Me</h4>
                                         </label>
-                                        <input type="text" class="form-control" name="phone" id="aboutme"
+                                        <input type="text" class="form-control" name="phone" id="about"
                                             placeholder="Enter Information About Yourself" title="enter your phone number if any.">
                                     </div>
                                 </div>
@@ -119,7 +119,7 @@
                                 
                                 <div class="col-xs-12">
                                     <br>
-                                    <button id="savePref" class="btn btn-lg btn-success" type="submit"><i
+                                    <button class="submitBtn btn btn-lg btn-success" type="submit"><i
                                             class="glyphicon glyphicon-ok-sign"></i> Save</button>
                                     <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i>
                                         Reset</button>
