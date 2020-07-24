@@ -1,49 +1,49 @@
- <div class="container-fluid">
-        <div class="row bg-dark">
-            <div class="col-md-12 p-0">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-2">
-                    <a class="navbar-brand ml-3" href="/">Home</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/user/login">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-primary" href="/user/register">Register</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+<div class="container-fluid">
+    <div class="row bg-dark">
+        <div class="col-md-12 p-0">
+            <nav class="navbar navbar-expand-lg pt-2">
+                <a class="navbar-brand ml-3" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="/user/register">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <h1 class="text-center">Register</h1>
+            <form class="alertAppendReg">
+                <div class="form-group">
+                    <label for="emailInputReg">Email address</label>
+                    <input type="email" class="form-control" id="emailInputReg" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="passwordInputReg">Password</label>
+                    <input type="password" class="form-control" id="passwordInputReg">
+                </div>
+                <div class="form-group">
+                    <label for="passwordTwoInputReg">Confirm Password</label>
+                    <input type="password" class="form-control" id="passwordTwoInputReg">
+                </div>
+                <button id="submitBtnReg" type="submit" class="btn btn-primary">Submit</button>
+                <small class="form-text text-muted">Already Registered..? <a href="/user/login">Log In</a></small>
+            </form>
         </div>
     </div>
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-4 mx-auto">
-                <h1 class="text-center">Register</h1>
-                <form class="alertAppendReg">
-                    <div class="form-group">
-                        <label for="emailInputReg">Email address</label>
-                        <input type="email" class="form-control" id="emailInputReg" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                        <label for="passwordInputReg">Password</label>
-                        <input type="password" class="form-control" id="passwordInputReg">
-                    </div>
-                    <div class="form-group">
-                        <label for="passwordTwoInputReg">Confirm Password</label>
-                        <input type="password" class="form-control" id="passwordTwoInputReg">
-                    </div>
-                    <button id="submitBtnReg" type="submit" class="btn btn-primary">Submit</button>
-                    <small class="form-text text-muted">Already Registered..? <a href="/user/login">Log In</a></small>
-                </form>
-            </div>
-        </div>
-    </div>
+</div>
 
-    <script type="text/javascript" src="/js/register.js"></script>
+<script type="text/javascript" src="/js/register.js"></script>
