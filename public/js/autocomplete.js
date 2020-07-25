@@ -3,3 +3,5 @@ const autoComplete = document.getElementsByClassName("autoComplete");
 //Grabbing div by id where autocomplete data will show on the page.
 const gameSuggest = document.getElementById("gameSuggest");
 
+//adding event listener to the top games forms.
+autoComplete.addEventListener("input", ()=>suggestGames(autoComplete.value));
