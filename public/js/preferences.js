@@ -15,6 +15,6 @@ $(".submitBtn").on("click", function (event) {
   };
   console.log($("#steamUsername").val());
   $.post("/api/profile", profileObj)
-    .then(response => console.log(response))  
+    .then(response => console.log(response))
     .catch(err => console.log(err));
 });
