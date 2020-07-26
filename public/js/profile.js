@@ -1,6 +1,6 @@
 // When the profile page loads, grab all the data for a particular user id
 $(document).ready(function() {
-  $.get("/api/profile-display", function(data) {
+  $.get("/api/profile", function(data) {
     $("#usernameAppend").text(data[0].username);
     $("#locationAppend").text(data[0].location);
     $("#nowPlayingAppend").text(data[0].topgamesPlayed);
