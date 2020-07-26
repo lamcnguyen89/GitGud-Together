@@ -49,5 +49,7 @@ module.exports = function (sequelize, DataTypes) {
     }
   });
 
+  //Sync with DB
+  Profile.sync();
   return Profile;
 };
