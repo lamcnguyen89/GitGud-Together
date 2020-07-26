@@ -1,6 +1,6 @@
 
 module.exports = function (sequelize, Datatypes) {
-// Creates a "Chirp" model that matches up with DB
+
   var Game = sequelize.define("Game", {
     appid: {
       type: Datatypes.STRING,
@@ -9,7 +9,7 @@ module.exports = function (sequelize, Datatypes) {
       type: Datatypes.STRING,
     },
     release_date:{
-     type: Datatypes.STRING,
+      type: Datatypes.STRING,
     },
     developer:{
       type: Datatypes.STRING,
@@ -42,11 +42,7 @@ module.exports = function (sequelize, Datatypes) {
       type: Datatypes.STRING,
     } 
   });
-console.log(Game)
 
-  // Syncs with DB
-  Game.sync();
 
-  // Makes the Chirp Model available for other files (will also create a table)
-  module.exports = Game;
+ return Game;
 };
