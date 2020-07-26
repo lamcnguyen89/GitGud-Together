@@ -13,8 +13,8 @@ $(".submitBtn").on("click", function (event) {
     game4: $("#favoriteGame04").val().trim(),
     game5: $("#favoriteGame05").val().trim()
   };
-  console.log($("#steamUsername").val());
   $.post("/api/profile", profileObj)
-    .then(response => console.log(response))
+    .then(response => console.log(response), $("#registrationForm")[0].reset())
     .catch(err => console.log(err));
 });
+

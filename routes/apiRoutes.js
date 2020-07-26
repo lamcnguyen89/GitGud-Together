@@ -1,8 +1,7 @@
 const router = require("express").Router();
 const db = require("../models");
 
-// use this file to code your API routes
-
+// Route to take user inputs on the preferences page and input them into the User Profle table.
 router.post("/profile", function (req, res) {
   console.log(req.body);
   db.Profile.create({
@@ -41,7 +40,21 @@ router.get("/games", function (req, res) {
   db.Game.findAll({}).then(function(games) {
     res.json(games);
   });
+// Route to retrieve User Preferences data and display them on the User Profile Page
+router.get("/profile-display", function(req, res) {
+  if (!req.user) {
+    // The user is not logged in, send back an empty object
+    res.json({});
+  } else {
+    db.Profile.findAll({
+      limit: 1,
+      order: [[ "createdAt", "DESC" ]]
+    }).then(function(dbProfile) {
+      res.json(dbProfile);
+    });
+  }
 });
 
 module.exports = router;
+
 

@@ -2,52 +2,54 @@ module.exports = function (sequelize, DataTypes) {
   var Profile = sequelize.define("Profile", {
     username: {
       type: DataTypes.STRING,
-      allowNull: false,
+      defaultValue: "SteamUsername",
       unique: true
     },
     aboutme: {
       type: DataTypes.STRING,
-      allowNull: false
+      defaultValue: "AddYourself"
     },
 
     topgamesPlayed: {
       type: DataTypes.STRING,
-      allowNull: false
+      defaultValue: "AddcurrentGame"
     },
 
     genres: {
       type: DataTypes.STRING,
-      allowNull: false
+      defaultValue: "Addyourfavoritegenre"
     },
     achievements: {
       type: DataTypes.STRING,
-      allowNull: false
+      defaultValue: "Addyourachievements"
     },
     location: {
       type: DataTypes.STRING,
-      allowNull: false
+      defaultValue: "Addyourlocation"
     },
     game1: {
       type: DataTypes.STRING,
-      allowNull: false
+      defaultValue: "Add#1favoritegame"
     },
     game2: {
       type: DataTypes.STRING,
-      allowNull: true
+      defaultValue: "Add#2favoritegame"
     },
     game3: {
       type: DataTypes.STRING,
-      allowNull: true
+      defaultValue: "Add#3favoritegame"
     },
     game4: {
       type: DataTypes.STRING,
-      allowNull: true
+      defaultValue: "Add#4favoritegame"
     },
     game5: {
       type: DataTypes.STRING,
-      allowNull: true
+      defaultValue: "Add#5favoritegame"
     }
   });
 
+  //Sync with DB
+  Profile.sync();
   return Profile;
 };
