@@ -40,7 +40,7 @@ module.exports = function (sequelize, Datatypes) {
     },
     price:{
       type: Datatypes.STRING,
-    } 
+    },
   });
 
 
