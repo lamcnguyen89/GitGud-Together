@@ -1,4 +1,3 @@
-
 $(".submitBtn").on("click", function (event) {
   event.preventDefault();
   const profileObj = {

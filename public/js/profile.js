@@ -1,5 +1,3 @@
-
-
 // When the profile page loads, grab all the data for a particular user id
 $(document).ready(function() {
   $.get("/api/profile-display", function(data) {
@@ -14,6 +12,7 @@ $(document).ready(function() {
     $("#genreAppend").text(data.genres);
     $("#aboutMeAppend").text(data.aboutme);
     $("#achievementsAppend").text(data.achievements);
+    console.log(data);
   });
 
 });

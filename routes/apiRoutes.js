@@ -28,23 +28,16 @@ router.post("/profile", function (req, res) {
 
 // Route to retrieve User Preferences data and display them on the User Profile Page
 router.get("/profile-display", function(req, res) {
-  console.log("So far this get route /profile-display works");
   if (!req.user) {
     // The user is not logged in, send back an empty object
     res.json({});
   } else {
-    res.json({
-      username: "love",
-      aboutme: "death",
-      topgamesPlayed: "love",
-      genres: "death",
-      achievements: "love",
-      location: "death",
-      game1: "love",
-      game2: "death",
-      game3: "love",
-      game4: "death",
-      game5: "love"
+    db.Profile.findOne({
+      where: {
+        id: "1"
+      }
+    }).then(function(dbProfile) {
+      res.json(dbProfile);
     });
   }
 });
