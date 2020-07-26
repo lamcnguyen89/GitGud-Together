@@ -40,6 +40,8 @@ router.get("/games", function (req, res) {
   db.Game.findAll({}).then(function(games) {
     res.json(games);
   });
+});
+
 // Route to retrieve User Preferences data and display them on the User Profile Page
 router.get("/profile-display", function(req, res) {
   if (!req.user) {
