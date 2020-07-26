@@ -32,10 +32,9 @@ router.get("/profile-display", function(req, res) {
     // The user is not logged in, send back an empty object
     res.json({});
   } else {
-    db.Profile.findOne({
-      where: {
-        id: "1"
-      }
+    db.Profile.findAll({
+      limit: 1,
+      order: [[ "createdAt", "DESC" ]]
     }).then(function(dbProfile) {
       res.json(dbProfile);
     });
@@ -43,4 +42,5 @@ router.get("/profile-display", function(req, res) {
 });
 
 module.exports = router;
+
 
