@@ -2,9 +2,6 @@
 module.exports = function (sequelize, Datatypes) {
 
   var Game = sequelize.define("Game", {
-    appid: {
-      type: Datatypes.STRING,
-    },
     name:{ 
       type: Datatypes.STRING,
     },
@@ -33,7 +30,7 @@ module.exports = function (sequelize, Datatypes) {
       type: Datatypes.STRING,
     },
     negative_ratings:{
-      types: Datatypes.STRING,
+      type: Datatypes.STRING,
     },
     owners:{ 
       type:Datatypes.STRING,

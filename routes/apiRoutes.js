@@ -37,6 +37,11 @@ router.post("/profile", function (req, res) {
 //     res.render("profile", profileObj);
 //   });
 // });
+router.get("/games", function (req, res) {
+  db.Game.findAll({}).then(function(games) {
+    res.json(games);
+  });
+});
 
 module.exports = router;
 
