@@ -18,3 +18,4 @@ $(".submitBtn").on("click", function (event) {
     .then(response => console.log(response), $("#registrationForm")[0].reset())
     .catch(err => console.log(err));
 });
+
