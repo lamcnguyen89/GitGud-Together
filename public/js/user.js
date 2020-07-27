@@ -7,7 +7,7 @@ const userName = document.querySelector(".userName");
 fetch("/auth/user")
   .then(response => response.json())
   .then(data => {
-    userName.textContent = data.email; })
-  .catch(err => console.log(err));
+    userName.textContent = data.email;
+  }).catch(err => console.log(err));
 
 

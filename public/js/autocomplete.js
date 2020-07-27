@@ -18,13 +18,13 @@ const getGames = () => {
     });
 
     getGenres();
-    // const genres = 
+    // const genres =
   });
-}
+};
 
 const getGenres = () => {
-
-}
+  console.log();
+};
 
 getGames();
 // //search games table in steamGames_db and filtering it.
