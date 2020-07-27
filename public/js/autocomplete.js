@@ -10,7 +10,7 @@ const getGames = () => {
   $.get("/api/games", function (data) {
     games = data;
     const options = data.map(game => {
-      return `<option value="${game.id}">${game.name}</option>`;
+      return `<option value="${game.name}">${game.name}</option>`;
     }).join(" ");
 
     $(".autoComplete").each((i, val)=> {
@@ -23,7 +23,7 @@ const getGames = () => {
 }
 
 const getGenres = () => {
-  
+
 }
 
 getGames();

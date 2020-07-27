@@ -6,12 +6,12 @@ $(".submitBtn").on("click", function (event) {
     topgamesPlayed: $("#currently").val().trim(),
     genres: $("#genre").val().trim(),
     achievements: $("#achievements").val().trim(),
-    location: $("#location").val().trim(),
-    game1: $("#favoriteGame01").val().trim(),
-    game2: $("#favoriteGame02").val().trim(),
-    game3: $("#favoriteGame03").val().trim(),
-    game4: $("#favoriteGame04").val().trim(),
-    game5: $("#favoriteGame05").val().trim()
+    location: $("#location").val(),
+    game1: $("#favoriteGame01").val(),
+    game2: $("#favoriteGame02").val(),
+    game3: $("#favoriteGame03").val(),
+    game4: $("#favoriteGame04").val(),
+    game5: $("#favoriteGame05").val()
   };
   $.post("/api/profile", profileObj)
     .then(response => console.log(response), $("#registrationForm")[0].reset())
