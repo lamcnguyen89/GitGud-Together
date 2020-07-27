@@ -13,7 +13,7 @@ $(document).ready(() => {
     //return steam ID from username
     const steamID = response.response.steamid;
     gameResults(steamID);
-    usrAcheiv(steamID)
+    usrAcheiv(steamID);
   });
 
   function gameResults(steamID) {
