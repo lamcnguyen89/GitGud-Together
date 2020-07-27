@@ -3,9 +3,6 @@
 // //Grabbing div by id where autocomplete data will show on the page.
 // const gameSuggest = document.querySelector("#game-suggest");
 // //requiring models to use sequelize.
-let games = [];
-
-
 const getGames = () => {
   $.get("/api/games", function (data) {
     games = data;
@@ -13,20 +10,27 @@ const getGames = () => {
       return `<option value="${game.name}">${game.name}</option>`;
     }).join(" ");
 
-    $(".autoComplete").each((i, val)=> {
+    $(".autoComplete").each((i, val) => {
       $(val).append(options);
     });
-
-    getGenres();
-    // const genres =
   });
 };
 
 const getGenres = () => {
-  console.log();
+  $.get("/api/games", function (data) {
+    games = data;
+    const genOptions = data.map(game => {
+      return `<option value="${game.genres}">${game.genres}</option>`;
+    }).join(" ");
+
+    $(".autoCompleteGenre").each((i, genVal) => {
+      $(genVal).append(genOptions);
+    });
+  });
 };
 
 getGames();
+getGenres();
 // //search games table in steamGames_db and filtering it.
 // const suggestGames = formText => {
 //   //Matches current text input.

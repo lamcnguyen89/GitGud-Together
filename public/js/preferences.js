@@ -4,7 +4,7 @@ $(".submitBtn").on("click", function (event) {
     username: $("#steamUsername").val().trim(),
     aboutme: $("#about").val().trim(),
     topgamesPlayed: $("#currently").val().trim(),
-    genres: $("#genre").val().trim(),
+    genres: $("#genre").val(),
     achievements: $("#achievements").val().trim(),
     location: $("#location").val(),
     game1: $("#favoriteGame01").val(),
