@@ -26,6 +26,22 @@ router.post("/profile", function (req, res) {
     });
 });
 
+// router.get("/profile", function (req, res) {
+//   console.log(req.body);
+//   Profile.all(function (data) {
+//     var profileObj = {
+//       steamUsername: data
+//     };
+//     console.log(profileObj);
+//     res.render("profile", profileObj);
+//   });
+// });
+router.get("/games", function (req, res) {
+  db.Game.findAll({}).then(function(games) {
+    res.json(games);
+  });
+});
+
 // Route to retrieve User Preferences data and display them on the User Profile Page
 router.get("/profile-display", function(req, res) {
   if (!req.user) {
