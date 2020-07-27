@@ -24,13 +24,13 @@ router.post("/profile", function (req, res) {
 //   });
 // });
 router.get("/games", function (req, res) {
-  db.Game.findAll({}).then(function(games) {
+  db.Game.findAll({}).then(function (games) {
     res.json(games);
   });
 });
 
 // Route to retrieve User Preferences data and display them on the User Profile Page
-router.get("/profile", function(req, res) {
+router.get("/profile", function (req, res) {
   console.log(req.session.passport.user);
   if (!req.user) {
     // The user is not logged in, send back an empty object
@@ -42,7 +42,7 @@ router.get("/profile", function(req, res) {
       }
       // limit: 1,
       // order: [[ "createdAt", "DESC" ]]
-    }).then(function(dbProfile) {
+    }).then(function (dbProfile) {
       console.log(dbProfile);
       res.json(dbProfile);
     });
@@ -50,7 +50,7 @@ router.get("/profile", function(req, res) {
 });
 
 // Route to delete the most current User Preferences data that is displayed on the User Profile Page
-router.delete("/profileDelete/:id", function(req, res) {
+router.delete("/profileDelete/:id", function (req, res) {
   console.log(req.params.id);
   if (!req.user) {
     // The user is not logged in, send back an empty object
@@ -61,7 +61,24 @@ router.delete("/profileDelete/:id", function(req, res) {
         id: req.params.id
       }
       // truncate: false
-    }).then(function(dbProfile) {
+    }).then(function (dbProfile) {
+      res.json(dbProfile);
+    });
+  }
+});
+router.put("/profileUpdate/:id", function (req, res) {
+  console.log(req.params.id);
+  if (!req.user) {
+    // The user is not logged in, send back an empty object
+    res.json({});
+  } else {
+    db.Profile.update(
+      req.body, {
+        where: {
+          id: req.params.id
+        }
+      // truncate: false
+      }).then(function (dbProfile) {
       res.json(dbProfile);
     });
   }
