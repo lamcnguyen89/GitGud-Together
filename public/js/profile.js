@@ -19,6 +19,7 @@ $(document).ready(function() {
     $("#achievementsAppend").text(data.achievements);
   });
 
+
   // Delete the user profile that is displayed :
   $(".deleteBtn").on("click", function (event) {
     event.preventDefault();
@@ -31,6 +32,7 @@ $(document).ready(function() {
         window.location.href="/";
       });
   });
+
 });
 
 
