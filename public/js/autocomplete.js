@@ -5,7 +5,6 @@
 // //requiring models to use sequelize.
 const getGames = () => {
   $.get("/api/games", function (data) {
-    games = data;
     const options = data.map(game => {
       return `<option value="${game.name}">${game.name}</option>`;
     }).join(" ");
@@ -18,11 +17,9 @@ const getGames = () => {
 
 const getGenres = () => {
   $.get("/api/games", function (data) {
-    games = data;
     const genOptions = data.map(game => {
       return `<option value="${game.genres}">${game.genres}</option>`;
     }).join(" ");
-
     $(".autoCompleteGenre").each((i, genVal) => {
       $(genVal).append(genOptions);
     });
@@ -37,9 +34,7 @@ getGenres();
 //   let gamematches = games.filter(game => {
 //     return game.name.toLowerCase().includes(formText.toLowerCase());
 //   });
-
 //   console.log(gamematches);
 // };
-
 // //adding event listener to the top games forms.
 // autoComplete.addEventListener("input", () => suggestGames(autoComplete.value));
