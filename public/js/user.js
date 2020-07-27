@@ -12,5 +12,3 @@ fetch("/auth/user")
     userName.textContent = data.email;
     userId = data.id;
   }).catch(err => console.log(err));
-
-
