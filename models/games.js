@@ -1,8 +1,7 @@
-
 module.exports = function (sequelize, Datatypes) {
 
   var Game = sequelize.define("Game", {
-    name:{ 
+    name:{
       type: Datatypes.STRING,
     },
     release_date:{
@@ -11,13 +10,13 @@ module.exports = function (sequelize, Datatypes) {
     developer:{
       type: Datatypes.STRING,
     },
-    publisher:{ 
+    publisher:{
       type: Datatypes.STRING,
     },
-    platforms:{ 
+    platforms:{
       type: Datatypes.STRING,
     },
-    required_age:{ 
+    required_age:{
       type: Datatypes.STRING,
     },
     categories: {
@@ -26,13 +25,13 @@ module.exports = function (sequelize, Datatypes) {
     genres: {
       type: Datatypes.STRING,
     },
-    positive_ratings:{ 
+    positive_ratings:{
       type: Datatypes.STRING,
     },
     negative_ratings:{
       type: Datatypes.STRING,
     },
-    owners:{ 
+    owners:{
       type:Datatypes.STRING,
     },
     price:{
@@ -40,6 +39,5 @@ module.exports = function (sequelize, Datatypes) {
     },
   });
 
-
- return Game;
+  return Game;
 };
