@@ -4,7 +4,7 @@ USE `steamGames_db`;
 
 CREATE TABLE games
 (
-	appid int,
+	id int,
 	name varchar(255),
 	release_date varchar(255),
 	developer varchar(255),

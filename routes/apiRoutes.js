@@ -49,6 +49,24 @@ router.get("/profile", function(req, res) {
   }
 });
 
+// Route to delete the most current User Preferences data that is displayed on the User Profile Page
+router.delete("/profileDelete/:id", function(req, res) {
+  console.log(req.params.id);
+  if (!req.user) {
+    // The user is not logged in, send back an empty object
+    res.json({});
+  } else {
+    db.Profile.destroy({
+      where: {
+        id: req.params.id
+      }
+      // truncate: false
+    }).then(function(dbProfile) {
+      res.json(dbProfile);
+    });
+  }
+});
+
 module.exports = router;
 
 
