@@ -13,16 +13,18 @@ const getGames = () => {
 
 const getGenres = () => {
   $.get("/api/games", function (data) {
-    const genOptions = data.map(game => {
-      //work on getting game.genres filtered
-      //showing multiple of each
-      return `<option value="${game.genres}">${game.genres}</option>`;
-    }).join(" ");
-    $(".autoCompleteGenre").each((i, genVal) => {
-      $(genVal).append(genOptions);
+    const filter = [];
+    for (let i = 0; i < data.length; i++) {
+      if (filter.indexOf(data[i].genres) === -1) {
+        filter.push(data[i].genres);
+      }
+    }
+    filter.forEach((item) => {
+      $(".autoCompleteGenre").append(
+        `<option value="${item}">${item}</option>`
+      );
     });
   });
 };
-
 getGames();
 getGenres();
