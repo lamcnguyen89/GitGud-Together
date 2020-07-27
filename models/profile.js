@@ -49,7 +49,12 @@ module.exports = function (sequelize, DataTypes) {
     }
   });
 
-  //Sync with DB
-  Profile.sync();
+  Profile.associate = function(models) {
+    Profile.belongsTo(models.User, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
   return Profile;
 };

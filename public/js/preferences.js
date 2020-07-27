@@ -11,7 +11,8 @@ $(".submitBtn").on("click", function (event) {
     game2: $("#favoriteGame02").val(),
     game3: $("#favoriteGame03").val(),
     game4: $("#favoriteGame04").val(),
-    game5: $("#favoriteGame05").val()
+    game5: $("#favoriteGame05").val(),
+    UserId: userId
   };
   $.post("/api/profile", profileObj)
     .then(response => console.log(response), $("#registrationForm")[0].reset())
