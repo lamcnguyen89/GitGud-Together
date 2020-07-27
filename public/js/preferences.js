@@ -19,3 +19,15 @@ $(".submitBtn").on("click", function (event) {
     .catch(err => console.log(err));
 });
 
+$(".updateBtn").on("click", function (event) {
+  event.preventDefault();
+  $.ajax({
+    method: "PUT",
+    url: "/api/profileUpdate/" + profileId
+  })
+    .then(function(results) {
+      console.log(results);
+      window.location.href="/profile";
+    });
+});
+
