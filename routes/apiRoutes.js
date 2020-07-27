@@ -43,11 +43,12 @@ router.get("/games", function (req, res) {
 });
 
 // Route to retrieve User Preferences data and display them on the User Profile Page
-router.get("/profile-display", function(req, res) {
+router.get("/profile", function(req, res) {
   if (!req.user) {
     // The user is not logged in, send back an empty object
     res.json({});
   } else {
+    console.log(res);
     db.Profile.findAll({
       limit: 1,
       order: [[ "createdAt", "DESC" ]]
