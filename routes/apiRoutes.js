@@ -49,6 +49,25 @@ router.get("/profile", function (req, res) {
   }
 });
 
+router.get("/dashboardprofile", function(req, res) {
+  console.log(req.session.passport.user);
+  if (!req.user) {
+    // The user is not logged in, send back an empty object
+    res.json({});
+  } else {
+    db.Profile.findAll({
+      where: {
+        UserId: req.session.passport.user
+      }
+      // limit: 1,
+      // order: [[ "createdAt", "DESC" ]]
+    }).then(function(dbProfile) {
+      console.log(dbProfile);
+      res.json(dbProfile);
+    });
+  }
+});
+
 // Route to delete the most current User Preferences data that is displayed on the User Profile Page
 router.delete("/profileDelete/:id", function (req, res) {
   console.log(req.params.id);
