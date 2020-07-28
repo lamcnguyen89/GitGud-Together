@@ -103,6 +103,20 @@ router.put("/profileUpdate/:id", function (req, res) {
   }
 });
 
+router.get("/dashboarddisplayusers", function(req, res) {
+  if (!req.user) {
+    // The user is not logged in, send back an empty object
+    res.json({});
+  } else {
+    db.Profile.findAll({
+
+    }).then(function(dbProfile) {
+      console.log(dbProfile);
+      res.json(dbProfile);
+    });
+  }
+});
+
 module.exports = router;
 
 
