@@ -16,19 +16,19 @@ $(document).ready(function() {
       cardusername.text(data[i].username);
 
       var genre = $("#genre" + i);
-      genre.text(data[i].genres);
+      genre.text("Genre:  " + data[i].genres);
 
       var game1 = $("#gameone" + i);
-      game1.text(data[i].game1);
+      game1.text("Game 1:  " + data[i].game1);
 
       var game2= $("#gametwo" + i);
-      game2.text(data[i].game2);
+      game2.text("Game 2:  " + data[i].game2);
 
       var game3 = $("#gamethree" + i);
-      game3.text(data[i].game3);
+      game3.text("Game 3:  " + data[i].game3);
 
       var location = $("#location" + i);
-      location.text(data[i].location);
+      location.text("Location:  " + data[i].location);
     }
   });
 });
