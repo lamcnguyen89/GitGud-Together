@@ -1,7 +1,7 @@
-<div class="container-fluid">
-    <div class="row bg-dark">
+<div class="container-fluid" id="nav-container">
+    <div class="row">
         <div class="col-md-8 p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark pt-2">
+            <nav class="navbar navbar-dark navbar-expand-lg navbar-dark pt-2">
                 <a class="navbar-brand ml-3" href="/">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,7 +10,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="/">Dashboard</a>
+                            <a class="nav-link " href="/">Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/user/preferences">Preferences</a>
@@ -23,102 +23,105 @@
             </nav>
         </div>
         <div class="col-md-4 text-right pt-2">
-            <a class="text-white pr-0 mr-3" href="/user/profile"><span class="userName"></span>
+            <a class="text-white pr-0 mr-3" href="/user/profile"><span class="userName text-primary"></span>
                 <i class="fas fa-user-circle fa-2x text-white mt-1 ml-2 mb-2"></i></a>
         </div>
     </div>
 </div>
 
-<hr>
 
-<div class="container bootstrap snippet">
 
-    <div class="row">
-        <div class="col-sm-10">
-            <h1>User Profile</h1>
-        </div>
+
+<div class="row text-center" id="profile-photo">
+    <div class="col-sm">
+        <h1>User Profile</h1>
     </div>
-    <div class="row">
+</div>
+<div class="row">
 
-        <div class="col-sm-3">
-            <!--left col-->
-            <div class="text-center">
-                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail"
-                    alt="avatar">
-                <h6>Upload a different photo...</h6>
-                <input type="file" class="text-center center-block file-upload">
-            </div>
-            </hr><br>
+    <div class="col-sm">
+        <!--left col-->
+        <div class="text-center">
+            <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail"
+                alt="avatar">
+            <h6>Upload a different photo...</h6>
+            <input type="file" class="text-center center-block file-upload">
         </div>
-        <!--/col-3-->
-        <div class="col-sm-9">
+        </hr><br>
+    </div>
+</div>
+</div>
 
-            <div class="tab-content">
+<!--/col-3-->
+<div class="container" id="profile-field">
+    <hr>
+    <div class="tab-content">
 
-                <div class="tab-pane active" id="home">
-                    <hr>
-                    <div class="row m-4">
-                        <div class="col-sm">
-                            <h3>Steam Username:<h3>
-                                    <span id="usernameAppend"></span>
-                        </div>
-                    </div>
-                    <div class="row m-4">
-                        <div class="col-sm">
-                            <h3>Location:<h3>
-                                    <span id="locationAppend">{{location}}</span>
-                        </div>
-                    </div>
-                    <div class="row m-4">
-                        <div class="col-sm">
-                            <h3>Now Playing:<h3>
-                                    <span id="nowPlayingAppend"></span>
-                        </div>
-                    </div>
-                    <div class="row m-4">
-                        <div class="col-sm">
-                            <h3>Top 5 Favorite Games:<h3>
-                                    <span id="gameAppend01"></span><br>
-                                    <span id="gameAppend02"></span><br>
-                                    <span id="gameAppend03"></span><br>
-                                    <span id="gameAppend04"></span><br>
-                                    <span id="gameAppend05"></span><br>
-                        </div>
-                    </div>
-                    <div class="row m-4">
-                        <div class="col-sm">
-                            <h3>Favorite Genre:<h3>
-                                    <span id="genreAppend"></span>
-                        </div>
-                    </div>
-                    <div class="row m-4">
-                        <div class="col-sm">
-                            <h3>About Me:<h3>
-                                    <span id="aboutMeAppend"></span>
-                        </div>
-                    </div>
-                    <div class="row m-4">
-                        <div class="col-sm">
-                            <h3>Achievements:<h3>
-                                    <span id="achievementsAppend"></span>
-                        </div>
-                    </div>
-                    <div class="row m-4">
-                        <div class="col-sm">
-                            <button class="deleteBtn btn btn-lg btn-success" type="submit"><i
-                                    class="glyphicon glyphicon-ok-sign"></i> Delete All Profile Data</button>
-                        </div>
-                    </div>
-                    <hr>
-                    <!--/tab-pane-->
+        <div class="tab-pane active" id="home">
+
+            <div class="row m-4">
+                <div class="col-sm">
+                    <h3>Steam Username:<h3>
+                            <span id="usernameAppend"></span>
                 </div>
-                <!--/tab-content-->
             </div>
-            <!--/col-9-->
+            <div class="row m-4">
+                <div class="col-sm">
+                    <h3>Location:<h3>
+                            <span id="locationAppend">{{location}}</span>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-sm">
+                    <h3>Now Playing:<h3>
+                            <span id="nowPlayingAppend"></span>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-sm">
+                    <h3>Top 5 Favorite Games:<h3>
+                            <span id="gameAppend01"></span><br>
+                            <span id="gameAppend02"></span><br>
+                            <span id="gameAppend03"></span><br>
+                            <span id="gameAppend04"></span><br>
+                            <span id="gameAppend05"></span><br>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-sm">
+                    <h3>Favorite Genre:<h3>
+                            <span id="genreAppend"></span>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-sm">
+                    <h3>About Me:<h3>
+                            <span id="aboutMeAppend"></span>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-sm">
+                    <h3>Achievements:<h3>
+                            <span id="achievementsAppend"></span>
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col-sm">
+                    <button class="deleteBtn btn btn-lg btn-danger" type="submit"><i
+                            class="glyphicon glyphicon-ok-sign"></i> Delete All Profile Data</button>
+                    <hr>
+                </div>
+            </div>
+
+            <!--/tab-pane-->
         </div>
-        <!--/row-->
+        <!--/tab-content-->
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/user.js"></script>
-    {{!-- <script type="text/javascript" src="/js/script.js"></script> --}}
-    <script type="text/javascript" src="/js/profile.js"></script>
+    <!--/col-9-->
+</div>
+<!--/row-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/user.js"></script>
+{{!-- <script type="text/javascript" src="/js/script.js"></script> --}}
+<script type="text/javascript" src="/js/profile.js"></script>
