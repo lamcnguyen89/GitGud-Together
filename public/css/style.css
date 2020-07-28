@@ -14,3 +14,11 @@ body {
 .nav .navbar .navbar-nav {
     background-color: #121212;
 } 
+#steamusername {
+    font-size: 26px;
+    font-weight: bold;
+}
+.card {
+    margin: 5px;
+
+}

@@ -31,7 +31,7 @@
 {{!-- User sidebar --}}
     <div class="row profile">
         <div class="mt-4">
-            <div class="col-md-4 ml-5">
+            <div class="col-md-3 ml-5">
                 <div class="profile-sidebar">
                     <!-- SIDEBAR USERPIC -->
                     <div class="profile-userpic">
@@ -40,47 +40,57 @@
                 </div>
                 <!-- END SIDEBAR USERPIC -->
                 <!-- SIDEBAR USER TITLE -->
-                <div class="profile-usertitle">
-                    <div class="profile-usertitle-name">
-                        <h2 id="steamusername"></h2>
-                    </div>
-                    <div class="profile-usertitle-job">
-                        <span id="favgenre"></span><span></span>
-                    </div>
+            
+            <div class="profile-usertitle">
+                <div class="profile-usertitle-name">
+                    <span id="steamusername"></span>
+                </div>
+                <div class="profile-usertitle-job">
+                    <span id="favgenre"></span><span> Player</span>
                 </div>
             </div>
         </div>
-        <div class="ml-5">
-            <div class="col-8 mt-4">
-                <div class="card text-white bg-warning mb-3">
-                    <div class="card-header">Header</div>
+
+            </div>
+            <div class="col-md-8 d-flex justify-content-center mt-4">
+
+                <div class="card" style="width: 18rem;" id="player1">
                     <div class="card-body">
-                        <h5 class="card-title">Warning card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title" id="username0">Card title</h5>
+                        <p class="card-text" id="genre0"></p>
+                        <p class="card-text" id="gameone0"></p>
+                        <p class="card-text" id="gametwo0"></p>
+                        <p class="card-text" id="gamethree0"></p>
+                        <p class="card-text" id="location0"></p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-8">
-                <div class="card text-white bg-warning mb-3">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Warning card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+            <div class="card" style="width: 18rem;" id="player2">
+                <div class="card-body">
+                 <h5 class="card-title" id="username1">Card title</h5>
+                        <p class="card-text" id="genre1"></p>
+                        <p class="card-text" id="gameone1"></p>
+                        <p class="card-text" id="gametwo1"></p>
+                        <p class="card-text" id="gamethree1"></p>
+                        <p class="card-text" id="location1"></p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-            <div class="col-8">
-                <div class="card text-white bg-warning mb-3">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Warning card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+            <div class="card" style="width: 18rem;" id="player3">
+                <div class="card-body">
+                <h5 class="card-title" id="username2">Card title</h5>
+                        <p class="card-text" id="genre2"></p>
+                        <p class="card-text" id="gameone2"></p>
+                        <p class="card-text" id="gametwo2"></p>
+                        <p class="card-text" id="gamethree2"></p>
+                        <p class="card-text" id="location2"></p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="/js/user.js"></script>
 <script type="text/javascript" src="/js/dashboard.js"></script>
