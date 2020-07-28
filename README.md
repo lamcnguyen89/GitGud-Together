@@ -35,7 +35,11 @@
 
   ## Screenshots
 
+  Phase one: <br>
   <img src =".\public\images\phaseOneHomePage.png" width="400">
+
+  Deployed: <br>
+  <img src =".\public\images\deployed.png" width="400">
 
 
   ## License
