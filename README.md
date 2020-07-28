@@ -1,4 +1,4 @@
-# GitGood Together - Steam Friend Finder
+# GitGud Together - Steam Friend Finder
 
   ![badge](https://img.shields.io/badge/License-MIT-blue)
 
@@ -6,13 +6,13 @@
   
   Based on your favorite games and favorite genres, you can find other gamer friends from the Steam Platform who could have similar intrest in games and genres as you. Play together. Win together. Lose Together. Git Gud @ Gaming Together.
 
-  Inside this application, as a user you will be able to create a profile that has several user prefrences. You will be able to choose from up to five of your favorite games picking from out vast library of over 40,000 steam games as well as setting a favorite genre of your own. After you set your prefrences, feel free to check out the dashboard page for other steam users with similar game intrests!
+  Inside this application, as a user you will be able to create a profile that has several user preferences. You will be able to choose from up to five of your favorite games picking from out vast library of over 40,000 steam games as well as setting a favorite genre of your own. After you set your preferences, feel free to check out the dashboard page for other steam users with similar game interests!
 
   Contributors: <br>
-  - Alex Isayyid: https://github.com/aisayyid <br>
-  - Christian Wolfe: https://github.com/christianwolfe <br>
-  - Lam Nguyen: https://github.com/lamcnguyen89 <br>
-  - William Leondike: https://github.com/WLeondike <br>
+  - [Alex Isayyid](https://github.com/aisayyid) <br>
+  - [Christian Wolfe](https://github.com/christianwolfe) <br>
+  - [Lam Nguyen](https://github.com/lamcnguyen89) <br>
+  - [William Leondike](https://github.com/WLeondike) <br>
 
 
   ## Table of Contents
@@ -30,7 +30,7 @@
   
   ## Credits
   
-  Jorge Alvarez
+  Jorge Alvarez <br><br> ESLint <br> Handlebars <br> Bootstrap <br><br> npm <br> sequelize <br> dotenv <br> express <br> passport <br> bcryptjs
   
 
   ## Screenshots
