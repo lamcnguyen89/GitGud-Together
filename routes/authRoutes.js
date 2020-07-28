@@ -49,7 +49,6 @@ router.post("/register", async (req, res) => {
   } catch (err) {
     if (err) res.status(500).json({ message: "Internal Error" });
   }
-
 });
 
 // Route: /auth/register

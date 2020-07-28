@@ -1,7 +1,5 @@
-
 const userName = document.querySelector(".userName");
 // const steamUsername= document.querySelector(".steamUsername");
-
 // Get current User and display email information.
 // Here you can display any User information coming from the server.
 let userId = null;
