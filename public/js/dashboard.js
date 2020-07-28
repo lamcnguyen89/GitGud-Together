@@ -10,7 +10,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $.get("/api/dashboarddisplayusers", function(data) {
     console.log(data);
-    for (let i = 0; i <= 3; i++) {
+    for (let i = 0; i <= 6; i++) {
 
       var cardusername = $("#username" + i);
       cardusername.text(data[i].username);

@@ -15,8 +15,9 @@ $(".submitBtn").on("click", function (event) {
     UserId: userId
   };
   $.post("/api/profile", profileObj)
-    .then(response => console.log(response), $("#registrationForm")[0].reset())
+    .then(response => console.log(response), $("#registrationForm")[0].reset(), window.location.href="/user/profile")
     .catch(err => console.log(err));
+
 });
 
 $(".updateBtn").on("click", function (event) {
