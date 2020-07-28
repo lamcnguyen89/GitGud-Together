@@ -29,7 +29,6 @@ passport.use(
 );
 
 // passport boiler plate to serialize and deserialize user
-
 passport.serializeUser(function (user, done) {
   done(null, user.id);
 });

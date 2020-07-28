@@ -12,5 +12,4 @@ router.use("/api", apiRoutes);
 //html routes
 router.use("/", htmlRoutes);
 
-
 module.exports = router;

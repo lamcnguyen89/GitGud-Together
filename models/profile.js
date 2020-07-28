@@ -9,12 +9,10 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       defaultValue: "AddYourself"
     },
-
     topgamesPlayed: {
       type: DataTypes.STRING,
       defaultValue: "AddcurrentGame"
     },
-
     genres: {
       type: DataTypes.STRING,
       defaultValue: "Addyourfavoritegenre"

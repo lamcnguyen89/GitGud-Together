@@ -19,8 +19,6 @@ $(".submitBtn").on("click", function (event) {
     .catch(err => console.log(err));
 });
 
-
-
 $(".updateBtn").on("click", function (event) {
   event.preventDefault();
   const profileUpdate = {
