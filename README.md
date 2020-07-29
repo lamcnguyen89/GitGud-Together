@@ -42,7 +42,7 @@
   <img src =".\public\images\deployed.png" width="400">
   
   ## Link to Deployed Application
-  https://ggtogether.herokuapp.com/
+  https://pacific-forest-57357.herokuapp.com/
 
 
   ## License
