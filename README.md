@@ -42,7 +42,7 @@
   <img src =".\public\images\deployed.png" width="400">
   
   ## Link to Deployed Application
-  https://pacific-forest-57357.herokuapp.com/
+  https://gitgudtogether.herokuapp.com/
 
 
   ## License
