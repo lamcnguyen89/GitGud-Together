@@ -8,6 +8,9 @@
 
   Inside this application, as a user you will be able to create a profile that has several user preferences. You will be able to choose from up to five of your favorite games picking from out vast library of over 40,000 steam games as well as setting a favorite genre of your own. After you set your preferences, feel free to check out the dashboard page for other steam users with similar game interests!
 
+  Link to deployed site:<br>
+  https://gitgudtogether.herokuapp.com/
+
   Contributors: <br>
   - [Alex Isayyid](https://github.com/aisayyid) <br>
   - [Christian Wolfe](https://github.com/christianwolfe) <br>
